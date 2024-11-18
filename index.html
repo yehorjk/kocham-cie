@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czy mnie kochasz?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6f2; /* jasny różowy */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d5006d; /* ciemniejszy różowy */
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #ff69b4; /* różowy */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ff99cc; /* jaśniejszy różowy */
+        }
+        .button[disabled] {
+            background-color: #ccc; /* szary dla nieaktywnych */
+            cursor: not-allowed;
+        }
+        a {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #d5006d; /* ciemniejszy różowy */
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Czy mnie kochasz?</h1>
+        <button class="button" onclick="alert('Cieszę się, że tak!')">Tak</button>
+        <button class="button" disabled>Nie</button>
+        <a href="http://127.0.0.1:5500/index.html" target="_blank">koccham cie</a>
+    </div>
+</body>
+</html>
